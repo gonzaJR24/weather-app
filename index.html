@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container-fluid vw-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="weather text-align-center">
+            <div class="card shadow  text-center" style="width: 22rem;">
+                <form action="">
+                    <input type="text" placeholder="Enter a city name">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+                <div class="card-body">
+                    <div class="alert alert-danger d-none" role="alert">
+                        Invalid Information
+                      </div>
+                    <h5 class="card-title"></h5>
+                    <p class="card-text weather h5 text-center"></p>
+                    <p class="card-text description"></p>
+                    <p class="card-text temperature h1"></p>
+
+                    <div class="weather-icon"></div>
+
+                    <div class="min-max d-flex d-none">
+                        <div class="min">
+                            <p>Min</p>
+                            <p class="min-text ms-1">12</p>
+                        </div>
+                        
+                        <div class="max">
+                            <p>Max</p>
+                            <p class="max-text ms-1">32</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
